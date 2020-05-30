@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.login-form{
+    margin-top: 20px;
+    box-shadow: 0 0 5px;
+    border-radius: 3px;
+    font-weight: 700;
+    display: block;
+}
+
+.block{
+    margin: 10px;
+    padding: 5px 10px;
+    display: block;
+    button{
+        margin-top: 30px;
+    }
+}
+
+.have-acc {
+    margin: 0 10px;
+}
+
+.old-user {
+font-size: 12px;
+}
+
+.password-confirm {
+    display: none;
+}
