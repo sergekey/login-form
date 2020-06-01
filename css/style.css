@@ -48,3 +48,11 @@ h2.block.form-heading {
 .password-confirm {
   display: none;
 }
+
+.wrong-input {
+  border: solid 2px #ff0000;
+}
+
+.right-input {
+  border: solid 2px #21f121;
+}

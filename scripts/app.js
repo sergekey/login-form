@@ -7,28 +7,25 @@ let userRole = {
 const fontHeader = document.querySelector('.form-heading');
 const confirmPassword = document.querySelector('.password-confirm');
 const formConfirmBtn = document.querySelector('.form-confirm');
-
-let userData = {};
+let users = [];
 
 function showFormInfo() {
     formConfirmBtn.addEventListener('click', showInfo);
 
     function showInfo(event) {
         event.preventDefault(); // prevent autosubmitting
-        const userLogin = document.querySelector('.user-login').value;
-        const userPassword = document.querySelector('.user-password').value;
 
-        userData = {
-            login: userLogin,
-            password: userPassword
+        let userData = {
+            login: document.querySelector('.user-login').value,
+            password: document.querySelector('.user-password').value,
+            id: Date.now()
         }
-
-            console.log(userData.login);
-            console.log(userData.password);
+        users.push(userData);
+        document.querySelector('form').reset();
+        console.log(users);
     }
 }
 showFormInfo();
-console.log(userData);
 
 function isItNew() {
     const checkBox = document.querySelector('.have-acc');
@@ -46,3 +43,4 @@ function isItNew() {
         }
     };
 }
+
